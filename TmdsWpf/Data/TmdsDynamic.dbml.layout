@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.75" name="TmdsDynamic">
+  <DataContextMoniker Name="/TmdsDynamicDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ba49ee9b-d189-4da0-aa19-09778c0df9d7" absoluteBounds="0.75, 0.5, 2, 11.001365559895833">
+      <DataClassMoniker Name="/TmdsDynamicDataContext/tblTrackTagsActive" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de5fee32-b195-4bb0-a0b6-3d6cc3f59cb4" absoluteBounds="0.76499999999999968, 0.96, 1.9700000000000002, 10.441365559895832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

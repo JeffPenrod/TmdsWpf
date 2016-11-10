@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tmdsDatabaseDynamic" Class="TmdsDynamicDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=STMS-JPENROD;Initial Catalog=tmdsDatabaseDynamic;Integrated Security=True" SettingsObjectName="Tmds.Properties.Settings" SettingsPropertyName="tmdsDatabaseDynamicConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblTrackTagsActive" Member="tblTrackTagsActives">
+    <Type Name="tblTrackTagsActive">
+      <Column Name="TrackGUID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Subdivision" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="TerritoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Creator" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TagType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataString" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Restrictive" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RestrictionFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DelayData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Delay" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TagUID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Direction" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ExpectedReleaseTime" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CompList" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="RefNumPTC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PTCData" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NameRequestingTagPlacement" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SpeedTagFlagInfo" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SpeedTagReasonCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateSpeedRestriction" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SpeedRestrictionCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DurationTime" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="BulletinTag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BulletinReferenceGUID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BulletinForProtectionList" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BulletinForCancellationList" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PTCComponents" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="PTCTrackSegments" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PTCBulletinText" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MilePostBeginPrefix" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="MilePostEndPrefix" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="DeliveryOfRestriction" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AdvisorySummary" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MilePostBeginSuffix" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="MilePostEndSuffix" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="MilePostBegin" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MilePostEnd" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PTCCompositionCRC" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ObjectCRC" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AutoTag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TerritoryID2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TerritoryID3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CompList2" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CompList3" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="FlagCompList1" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="FlagCompList2" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="FlagCompList3" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BorderFlagSubs" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BorderFlagCompList" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="AutoTagStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CriticalAlertType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsPTCEnforceable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
